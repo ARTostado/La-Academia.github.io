@@ -14,33 +14,15 @@
     --dark-color: #151515;
 }
 
+/* Estilos generales */
 body {
-    background-color: var(--background-color);
-    color: var(--dark-color);
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f5f0;
+    color: #151515;
     margin: 0;
-    padding: 0;
-    background-image: url(https://media.istockphoto.com/id/1253450580/es/vector/patr%C3%B3n-vectorial-sin-costuras-con-granos-de-caf%C3%A9.jpg?s=612x612&w=0&k=20&c=r47Apru7-7k8N07NoP1ee-zVy9nyyUGvgGmscsYQUaE=);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
-.encabezado {
-    background-color: var(--background-color);
-}
-
-.cabezera {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 0;
-}
-
-.contenedor {
-    max-width: 20rem;
-    margin: 0 auto;
-}
-
+/* Contenedor principal */
 .menu-container {
     max-width: 1000px;
     margin: 0 auto;
@@ -50,118 +32,112 @@ body {
     border-radius: 8px;
 }
 
-h1 {
-    text-align: center;
-    color: var(--primary-color);
-    font-size: 2.5em;
-    margin-bottom: 20px;
+/* Encabezado */
+header {
+    background-color: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
 }
 
-h2 {
-    color: var(--primary-color);
-    font-size: 1.8em;
-    padding-bottom: 10px;
-    margin-top: 30px;
+header .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.menu-section {
-    margin-top: 20px;
+header .logoP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h3 {
-    font-size: 1.5em;
-    color: var(--primary-color);
-    margin-bottom: 10px;
+header .icono {
+    max-width: 100px;
 }
 
-.menu-item {
-    margin-bottom: 20px;
+/* Barra de navegación */
+nav {
+    background-color: #b87f57;
+    padding: 10px 0;
 }
 
-h4 {
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav .nav-links li {
+    margin: 0 15px;
+}
+
+nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
     font-size: 1.2em;
-    color: var(--secundary-color);
-    margin-bottom: 5px;
 }
 
+nav .nav-links a:hover {
+    color: #f9f5f0;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #b87f57;
+    text-align: center;
+}
+
+/* Estilos de la cuadrícula de productos */
 .product-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .polaroid {
-    flex: 1 1 calc(33.333% - 20px);
+    width: calc(33.333% - 20px);
     background-color: #f5f5dc;
     border: 1px solid #d3d3d3;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     border-radius: 8px;
     padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .polaroid img {
     height: auto;
-    border-radius: 4px;
-    max-width: 100%;
+    width: 100%;
     object-fit: cover;
-    flex-grow: 1;
-}
-
-.polaroid:hover {
-    transform: scale(1.05);
+    border-radius: 4px;
 }
 
 .caption {
     font-size: 1.2em;
     margin: 10px 0;
-    color: var(--dark-color);
+    color: #151515;
 }
 
 .price {
     font-size: 1.1em;
-    color: var(--primary-color);
-}
-
-.mini {
-    font-size: x-small;
+    color: #b87f57;
 }
 
 /* Responsividad */
 @media (max-width: 768px) {
-    .product-grid {
-        flex-direction: column;
-    }
-
     .polaroid {
-        width: 100%;
+        width: calc(50% - 20px);
     }
 }
 
 @media (max-width: 480px) {
-    .contenedor {
-        width: 90%;
-        padding: 2rem;
+    .polaroid {
+        width: 100%;
     }
 
-    h1 {
-        font-size: 1.5rem;
-        padding: 0.5rem;
-    }
-
-    h2, h3, h4 {
-        font-size: 1.2rem;
-    }
-
-    .polaroid img {
-        height: auto;
-        max-width: 100%;
-    }
-
-    .product-grid {
-        gap: 10px;
+    .caption, .price {
+        font-size: 1em;
     }
 }
