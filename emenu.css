@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #b87f57;
+    --secundary-color: #08a6a4;
+    --background-color: #f9f5f0;
+    --dark-color: #151515;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--dark-color);
+    margin: 0;
+    padding: 0;
+    background-image: url(https://media.istockphoto.com/id/1253450580/es/vector/patr%C3%B3n-vectorial-sin-costuras-con-granos-de-caf%C3%A9.jpg?s=612x612&w=0&k=20&c=r47Apru7-7k8N07NoP1ee-zVy9nyyUGvgGmscsYQUaE=);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.encabezado {
+    background-color: var(--background-color);
+}
+
+.cabezera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.contenedor {
+    max-width: 20rem;
+    margin: 0 auto;
+}
+
+.menu-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 1.8em;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+.menu-section {
+    margin-top: 20px;
+    border: none; /* Elimina las líneas de separación entre secciones */
+}
+
+h3 {
+    font-size: 1.5em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 1.2em;
+    color: var(--secundary-color);
+    margin-bottom: 5px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.polaroid {
+    width: calc(33.333% - 20px);
+    background-color: #f5f5dc;
+    border: 1px solid #d3d3d3;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.polaroid img {
+    height: auto;
+    border-radius: 4px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.polaroid:hover {
+    transform: scale(1.05);
+}
+
+.caption {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: var(--dark-color);
+}
+
+.price {
+    font-size: 1.1em;
+    color: var(--primary-color);
+}
+
+.mini {
+    font-size: x-small;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .contenedor {
+        width: 80%;
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor {
+        width: 90%;
+        padding: 2rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input {
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+    }
+
+    .error, .success {
+        font-size: 0.9rem;
+    }
+}
