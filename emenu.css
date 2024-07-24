@@ -103,7 +103,7 @@ h1, h2, h3 {
 
 .polaroid {
     width: calc(33.333% - 20px);
-    background-color: #08a6a4; /* Azul secundario para polaroids */
+    background-color: var(secundary-color); /* Azul secundario para polaroids */
     border: 1px solid #d3d3d3;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
