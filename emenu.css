@@ -9,7 +9,7 @@
 
 :root {
     --primary-color: #b87f57;
-    --secundary-color: #08a6a4;
+    --secundary-color: #08a6a4; /* Azul para polaroids */
     --background-color: #f9f5f0;
     --dark-color: #151515;
 }
@@ -57,8 +57,9 @@ header .icono {
 
 /* Barra de navegación */
 nav {
-    background-color: #b87f57;
+    background-color: #08a6a4; /* Azul secundario */
     padding: 10px 0;
+    border-bottom: 2px solid #006d6b; /* Borde inferior más oscuro para un look profesional */
 }
 
 nav .nav-links {
@@ -70,17 +71,20 @@ nav .nav-links {
 }
 
 nav .nav-links li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav .nav-links a {
     color: #fff;
     text-decoration: none;
     font-size: 1.2em;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 nav .nav-links a:hover {
     color: #f9f5f0;
+    text-decoration: underline;
 }
 
 /* Títulos */
@@ -99,7 +103,7 @@ h1, h2, h3 {
 
 .polaroid {
     width: calc(33.333% - 20px);
-    background-color: #f5f5dc;
+    background-color: #08a6a4; /* Azul secundario para polaroids */
     border: 1px solid #d3d3d3;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -117,12 +121,12 @@ h1, h2, h3 {
 .caption {
     font-size: 1.2em;
     margin: 10px 0;
-    color: #151515;
+    color: #fff; /* Color de texto blanco para contraste */
 }
 
 .price {
     font-size: 1.1em;
-    color: #b87f57;
+    color: #f9f5f0; /* Color blanco para contraste */
 }
 
 /* Responsividad */
