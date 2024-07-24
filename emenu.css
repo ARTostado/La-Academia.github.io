@@ -59,7 +59,6 @@ header .icono {
 nav {
     background-color: #08a6a4; /* Azul secundario */
     padding: 10px 0;
-    border-bottom: 2px solid #006d6b; /* Borde inferior más oscuro para un look profesional */
 }
 
 nav .nav-links {
