@@ -17,7 +17,7 @@
 /* Estilos generales */
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url("https://i.postimg.cc/VNJC0b76/ab91275f-0639-4767-aeba-d17fa4993401.jpg");
+    background-color: white smoke;
     color: #151515;
     margin: 0;
 }
@@ -27,7 +27,7 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #ffffff;
+    background-image: url("https://i.postimg.cc/VNJC0b76/ab91275f-0639-4767-aeba-d17fa4993401.jpg");
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
