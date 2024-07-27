@@ -32,7 +32,10 @@ header {
     left: 0;
     z-index: 1000; /* Asegura que el encabezado esté encima de otros elementos */
     padding: 20px 0; /* Espaciado interno del encabezado */
-    height: 80px; /* Establece una altura específica para el encabezado (ajusta según sea necesario) */
+    height: 80px; /* Altura del encabezado (ajustar según sea necesario) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Contenedor dentro del encabezado */
@@ -49,13 +52,14 @@ header .contenedor {
 nav {
     background-color: var(--secondary-color);
     padding: 10px 0;
-    position: sticky;
+    position: fixed;
     width: 100%;
-    top: 0;
+    top: 80px; /* Justo debajo del encabezado */
     z-index: 999; /* Asegura que la barra de navegación esté encima del contenido */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos de los enlaces en la barra de navegación */
 nav .nav-links {
     list-style: none;
     display: flex;
@@ -93,8 +97,9 @@ nav .nav-links a:hover {
     background-color: var(--background-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    margin-top: 100px; /* Asegura que el contenedor se sitúe debajo del encabezado y la barra de navegación */
+    margin-top: 120px; /* Asegura que el contenedor se sitúe debajo del encabezado y la barra de navegación */
 }
+
 /* Títulos */
 h1, h2, h3 {
     text-align: center;
@@ -185,7 +190,7 @@ h3 {
 
     .menu-container {
         padding: 10px;
-        margin-top: 100px; /* Ajusta el margen superior para dispositivos móviles */
+        margin-top: 120px; /* Ajusta el margen superior para dispositivos móviles */
     }
 
     .product-grid {
