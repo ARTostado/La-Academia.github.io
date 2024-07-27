@@ -28,9 +28,10 @@ body {
     margin: 0 auto;
     padding: 20px;
     background-image: url("https://i.postimg.cc/VNJC0b76/ab91275f-0639-4767-aeba-d17fa4993401.jpg");
-    background-size: cover;
+    background-size: contain; /* Cambiado a 'contain' */
     background-position: center;
     background-repeat: no-repeat;
+    background-color: var(--background-color); /* Color de fondo complementario */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
@@ -49,7 +50,7 @@ header .contenedor {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px; /* Espacio para la barra de navegación */
+    padding-top: 60px; /* Espacio para la barra de navegación */
 }
 
 header .logoP {
@@ -166,7 +167,7 @@ h3 {
 @media (max-width: 768px) {
     header .contenedor {
         flex-direction: column;
-        padding-top: 50px; /* Espacio para la barra de navegación */
+        padding-top: 70px; /* Ajustar el espacio para la barra de navegación */
     }
 
     nav .nav-links {
