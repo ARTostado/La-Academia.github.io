@@ -48,6 +48,11 @@ header .contenedor {
     color: var(--dark-color); /* Color del texto del encabezado */
 }
 
+.icono{
+    height: 30%;
+    width: 30%;
+}
+
 /* Barra de navegación */
 nav {
     background-color: var(--secondary-color);
@@ -71,7 +76,6 @@ nav .nav-links {
 nav .nav-links li {
     margin: 0 20px;
 }
-
 nav .nav-links a {
     color: #fff;
     text-decoration: none;
