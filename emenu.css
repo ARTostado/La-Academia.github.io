@@ -32,6 +32,7 @@ header {
     left: 0;
     z-index: 1000; /* Asegura que el encabezado esté encima de otros elementos */
     padding: 20px 0; /* Espaciado interno del encabezado */
+    height: 80px; /* Establece una altura específica para el encabezado (ajusta según sea necesario) */
 }
 
 /* Contenedor dentro del encabezado */
@@ -94,7 +95,6 @@ nav .nav-links a:hover {
     border-radius: 8px;
     margin-top: 100px; /* Asegura que el contenedor se sitúe debajo del encabezado y la barra de navegación */
 }
-
 /* Títulos */
 h1, h2, h3 {
     text-align: center;
