@@ -49,8 +49,8 @@ header .contenedor {
 }
 
 .icono{
-    height: 30%;
-    width: 30%;
+    height: 50px; /* Ajusta la altura de la imagen */
+    width: auto;  /* Mantiene la proporción de la imagen */
 }
 
 /* Barra de navegación */
