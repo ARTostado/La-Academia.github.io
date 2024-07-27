@@ -9,7 +9,7 @@
 
 :root {
     --primary-color: #b87f57;
-    --secundary-color: #08a6a4; /* Azul para polaroids */
+    --secondary-color: #08a6a4;
     --background-color: #f9f5f0;
     --dark-color: #151515;
 }
@@ -17,8 +17,8 @@
 /* Estilos generales */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: white smoke;
-    color: #151515;
+    background-color: var(--background-color);
+    color: var(--dark-color);
     margin: 0;
 }
 
@@ -28,6 +28,8 @@ body {
     margin: 0 auto;
     padding: 20px;
     background-image: url("https://i.postimg.cc/VNJC0b76/ab91275f-0639-4767-aeba-d17fa4993401.jpg");
+    background-size: cover;
+    background-position: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
@@ -37,6 +39,9 @@ header {
     background-color: #fff;
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header .contenedor {
@@ -57,8 +62,13 @@ header .icono {
 
 /* Barra de navegación */
 nav {
-    background-color: #08a6a4; /* Azul secundario */
+    background-color: var(--secondary-color);
     padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 60px;
+    z-index: 999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 nav .nav-links {
@@ -82,65 +92,120 @@ nav .nav-links a {
 }
 
 nav .nav-links a:hover {
-    color: #f9f5f0;
+    color: var(--background-color);
     text-decoration: underline;
 }
 
 /* Títulos */
 h1, h2, h3 {
-    color: #b87f57;
     text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
 }
 
-/* Estilos de la cuadrícula de productos */
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+/* Secciones del menú */
+.menu-section {
+    margin-bottom: 40px;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+}
+
 .product-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 20px;
-    justify-content: center;
+    justify-items: center;
 }
 
+/* Polaroid */
 .polaroid {
-    width: calc(33.333% - 20px);
-    background-color: #a8d8ea; /* Azul secundario para polaroids */
-    border: 1px solid #d3d3d3;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border-radius: 8px;
+    background: #fff;
     padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+    border-radius: 8px;
 }
 
 .polaroid img {
-    height: auto;
     width: 100%;
-    object-fit: cover;
-    border-radius: 4px;
+    height: auto;
+    border-radius: 8px;
 }
 
-.caption {
-    font-size: 1.2em;
+.polaroid .caption {
     margin: 10px 0;
-    color: #fff; /* Color de texto blanco para contraste */
+    font-size: 1.2em;
+    color: var(--dark-color);
 }
 
-.price {
-    font-size: 1.1em;
-    color: #f9f5f0; /* Color blanco para contraste */
+.polaroid .price {
+    font-size: 1em;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Efecto de hover */
+.polaroid:hover {
+    transform: translateY(-10px);
 }
 
 /* Responsividad */
 @media (max-width: 768px) {
-    .polaroid {
-        width: calc(50% - 20px);
+    header .contenedor {
+        flex-direction: column;
+    }
+
+    nav .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav .nav-links li {
+        margin: 10px 0;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    .menu-container {
+        padding: 10px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     }
 }
 
 @media (max-width: 480px) {
-    .polaroid {
-        width: 100%;
+    nav .nav-links a {
+        font-size: 1em;
     }
 
-    .caption, .price {
-        font-size: 1em;
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
     }
 }
