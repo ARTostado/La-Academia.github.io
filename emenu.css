@@ -95,7 +95,6 @@ nav .nav-links a:hover {
     margin: 0 auto;
     padding: 20px;
     background-image: url("https://i.postimg.cc/VNJC0b76/ab91275f-0639-4767-aeba-d17fa4993401.jpg"); /* Imagen de fondo en el contenedor */
-    background-size: cover; /* Ajustado a 'cover' para que se vea bien */
     background-position: center;
     background-repeat: no-repeat;
     background-color: var(--background-color);
