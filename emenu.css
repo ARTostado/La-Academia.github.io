@@ -30,6 +30,7 @@ body {
     background-image: url("https://i.postimg.cc/VNJC0b76/ab91275f-0639-4767-aeba-d17fa4993401.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
@@ -48,6 +49,7 @@ header .contenedor {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 50px; /* Espacio para la barra de navegación */
 }
 
 header .logoP {
@@ -66,7 +68,7 @@ nav {
     padding: 10px 0;
     position: fixed;
     width: 100%;
-    top: 60px;
+    top: 0; /* Mover la barra al tope */
     z-index: 999;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -164,6 +166,7 @@ h3 {
 @media (max-width: 768px) {
     header .contenedor {
         flex-direction: column;
+        padding-top: 50px; /* Espacio para la barra de navegación */
     }
 
     nav .nav-links {
