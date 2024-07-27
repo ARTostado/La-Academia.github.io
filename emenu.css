@@ -183,6 +183,7 @@ h3 {
 
     h2 {
         font-size: 2em;
+        margin-top: 120px; /* Ajusta el margen superior del título */
     }
 
     h3 {
@@ -206,6 +207,7 @@ h3 {
 
     h2 {
         font-size: 1.5em;
+        margin-top: 120px; /* Ajusta el margen superior del título */
     }
 
     h3 {
@@ -216,3 +218,4 @@ h3 {
         grid-template-columns: 1fr;
     }
 }
+
