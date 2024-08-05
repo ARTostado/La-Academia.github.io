@@ -22,6 +22,28 @@ body {
     margin: 0;
 }
 
+h2, h3, h4 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px 20px;
+    margin: 20px 0;
+    color: var(--dark-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid;
+}
+
+h2 {
+    border-color: var(--primary-color);
+}
+
+h3 {
+    border-color: var(--secundary-color);
+}
+
+h4 {
+    border-color: var(--primary-color);
+}
+
+
 /* Encabezado */
 header {
     background-color: #fff; /* Fondo blanco para el encabezado */
