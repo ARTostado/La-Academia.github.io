@@ -188,6 +188,31 @@ h3 {
 }
 }
 
+.flavor {
+    display: inline-block; /* Mantiene los sabores en línea pero con bloque de diseño */
+    padding: 5px 10px; /* Espaciado interno para un botón más atractivo */
+    margin: 5px; /* Espaciado entre los diferentes sabores */
+    background-color: var(--secondary-color); /* Color de fondo de los sabores */
+    color: #fff; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 0.9em; /* Tamaño de fuente ajustado para que sea más manejable */
+    font-weight: 600; /* Fuente en negrita para resaltar el texto */
+    text-transform: capitalize; /* Capitaliza la primera letra de cada palabra */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para color de fondo y transformaciones */
+}
+
+/* Efecto de hover para sabores */
+.flavor:hover {
+    background-color: #087a6b; /* Color de fondo más oscuro cuando se pasa el ratón */
+    transform: scale(1.05); /* Escala ligeramente el sabor cuando se pasa el ratón */
+}
+
+/* Opcional: estilos para sabores específicos dentro de polaroid */
+.polaroid .flavor {
+    display: block; /* Hace que cada sabor ocupe su propia línea */
+    font-size: 0.8em; /* Ajuste del tamaño de fuente */
+}
+
 /* Efecto de hover */
 .polaroid:hover {
     transform: translateY(-10px);
