@@ -184,7 +184,6 @@ h3 {
     border-radius: 10px; /* Bordes redondeados */
     padding: 5px 10px; /* Espaciado interno (padding) */
     display: inline-block; /* Hace que el cuadro se ajuste al contenido */
-    border: 1px solid #ccc; /* Borde del cuadro, opcional */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra sutil para darle profundidad */
 }
 }
