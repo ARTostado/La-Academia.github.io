@@ -192,7 +192,6 @@ h3 {
     display: inline-block; /* Mantiene los sabores en línea pero con bloque de diseño */
     padding: 5px 10px; /* Espaciado interno para un botón más atractivo */
     margin: 5px; /* Espaciado entre los diferentes sabores */
-    background-color: var(--secondary-color); /* Color de fondo de los sabores */
     color: #fff; /* Color del texto */
     border-radius: 5px; /* Bordes redondeados */
     font-size: 0.9em; /* Tamaño de fuente ajustado para que sea más manejable */
